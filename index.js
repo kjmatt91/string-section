@@ -10,9 +10,10 @@ function stringIncludes(haystack, needle) {
 
 function countLetter(haystack, needle) {
   let count = 0
+  let haystackArr = haystack.split('')
 
-  while (haystack.length) {
-    if (haystack.shift() === needle) {
+  while (haystackArr.length) {
+    if (haystackArr.shift() === needle) {
       count++
     }
   }
